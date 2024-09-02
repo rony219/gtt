@@ -83,7 +83,7 @@ const vacationPlaces = [
     },
     {
         name: "New York City, USA",
-        image: "https://via.placeholder.com/300x200?text=New+York",
+        image: "https://plus.unsplash.com/premium_photo-1682656220562-32fde8256295?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmV3JTIweW9yayUyMGNpdHl8ZW58MHx8MHx8fDA%3D",
         description: "The city that never sleeps, known for Times Square, Central Park, and Broadway."
     },
     {
