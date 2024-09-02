@@ -67,35 +67,145 @@ function calculateCost() {
 // Sample data for vacation places
 const vacationPlaces = [
     {
-        name: "Paris, France",
-        image: "https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/newsletter/eiffel-tower-in-paris-151-medium.jpg?1564742900",
-        description: "The city of lights and romance, known for the Eiffel Tower and its rich history.",
+        name: "Andra Pradesh, Hyderabad",
+        image: "https://media.istockphoto.com/id/1351964928/photo/araku-valley-visakhapatnam-andhra-pradesh-india.jpg?s=612x612&w=0&k=20&c=Mev1sG0qcWTCqzhoOaoALYrQFZnVHhqDif7CF4xfEhE=",
+        description: "Known for its rich culture, heritage, and the famous Tirupati temple.",
     },
     {
-        name: "Bali, Indonesia",
-        image: "https://img.freepik.com/free-photo/bali-pagoda-sunrise-indonesia_1150-11013.jpg?size=626&ext=jpg&ga=GA1.1.1054264010.1725272696&semt=ais_hybrid",
-        description: "A tropical paradise famous for its beaches, temples, and vibrant culture."
+        name: "Arunachal Pradesh, Itanagar",
+        image: "https://i.pinimg.com/originals/b6/9b/df/b69bdfd5fad4e3b9191fc80c0702fba0.jpg",
+        description: "The land of dawn-lit mountains, famous for its biodiversity."
     },
     {
-        name: "Kyoto, Japan",
-        image: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/02/23/18/kyoto-main.jpg?quality=75&width=1250&crop=3%3A2%2Csmart&auto=webp",
-        description: "A city of classical Buddhist temples, beautiful gardens, and traditional wooden houses."
+        name: "Assam, Dispur",
+        image: "https://media.istockphoto.com/id/1134043134/photo/women-harvest-tea-leaves-in-tea-plantation-assam-india.jpg?s=612x612&w=0&k=20&c=tDc1I0a740psoqGGc6fHoPYhhADdTpSY-e2C7hLgkkA=",
+        description: "Famous for its tea plantations and rich wildlife."
     },
     {
-        name: "New York City, USA",
-        image: "https://plus.unsplash.com/premium_photo-1682656220562-32fde8256295?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmV3JTIweW9yayUyMGNpdHl8ZW58MHx8MHx8fDA%3D",
-        description: "The city that never sleeps, known for Times Square, Central Park, and Broadway."
+        name: "Bihar, Patna",
+        image: "https://www.shutterstock.com/image-photo/bodh-gaya-bihar-seat-enlightenment-600nw-1570135798.jpg",
+        description: "state in eastern India known for its rich cultural heritage, historical significance, and agricultural economy."
     },
     {
-        name: "Sydney, Australia",
-        image: "https://via.placeholder.com/300x200?text=Sydney",
-        description: "Home to the iconic Sydney Opera House and beautiful beaches like Bondi Beach."
+        name: "Chhattisgarh, Raipur",
+        image: "https://t3.ftcdn.net/jpg/04/22/27/00/240_F_422270049_Lcfprpg4cbvy8QXMb6OloEW2C4Qxfg8r.jpg",
+        description: "A central Indian state known for its rich cultural heritage, lush forests, and diverse tribal communities."
     },
     {
-        name: "Cape Town, South Africa",
-        image: "https://via.placeholder.com/300x200?text=Cape+Town",
-        description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
-    }
+        name: "Goa, Panaji",
+        image: "https://media.istockphoto.com/id/157579910/photo/the-beach.jpg?s=612x612&w=0&k=20&c=aMk67AmzIVD_S1Nibww8ytUdyub2ck3HNQ3uTvuPWPI=",
+        description: "A coastal state known for its stunning beaches, vibrant nightlife, and Portuguese heritage."
+    },
+    {
+        name: "Gujrat, Gandhinagar",
+        image: "https://media.istockphoto.com/id/177800537/photo/bay-and-harbor-view-of-dwarka-gujarat-india.webp?b=1&s=612x612&w=0&k=20&c=i-tSQNVjKUBUXVnsDqeql2X2WUD7r3ZVrsdoE2J4n00=",
+        description: "Known for its rich history, vibrant culture, and economic significance."
+    },
+    {
+        name: "Haryana, Chandigarh",
+        image: "https://plus.unsplash.com/premium_photo-1697730334768-6e65fa8fded0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aGFyeWFuYXxlbnwwfHwwfHx8MA%3D%3D",
+        description: "A state in northern India known for its agricultural productivity and vibrant cultural heritage."
+    },
+    {
+        name: "Himachal Pradesh, Shimla",
+        image: "https://media.istockphoto.com/id/1371289822/photo/himalayan-village-town-of-kalpa-with-kailash-mountain-snow-peaks-at-himachal-pradesh-india.webp?b=1&s=612x612&w=0&k=20&c=C6y4Yqs1SpF4gtA8cxER7gKq5CJMQj_pFxzZ29KgVCA=",
+        description: "A picturesque northern Indian state known for its stunning Himalayan landscapes and vibrant hill stations."
+    },
+    {
+        name: "Jharkhand, Ranchi",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWnHxdoC9YU_TWRj4so48cNgPxW-9Vgejs0cA6AvDO1f3bJeMESmmbWtTaJCIAKbihRRQ&usqp=CAU",
+        description: "An Indian state known for its rich natural resources, diverse tribal culture, and scenic landscapes."
+    },
+    {
+        name: "Karnataka, Bengaluru",
+        image: "https://plus.unsplash.com/premium_photo-1697730504977-26847b1f1f91?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8a2FybmF0YWthfGVufDB8fDB8fHww",
+        description: "A state in southern India known for its rich cultural heritage, diverse landscapes, and significant contributions to literature, art, and technology."
+    },
+    {
+        name: "Kerala, Thiruvananthapuram",
+        image: "https://t4.ftcdn.net/jpg/00/99/72/93/360_F_99729394_rV8TM7ta85cNBUvuB8DyI8q0IyXAtU9b.jpg",
+        description: "A tropical paradise in southern India known for its lush landscapes, backwaters, and rich cultural heritage."
+    },
+    {
+        name: "Madhya Pradesh, Bhopal",
+        image: "https://static.toiimg.com/photo/msid-98387805,width-96,height-65.cms",
+        description: "A central Indian state known for its rich cultural heritage, historic monuments, and diverse wildlife."
+    },
+    {
+        name: "Maharashtra, Mumbai",
+        image: "https://static.toiimg.com/thumb/width-600,height-400,msid-64028431.cms",
+        description: "A diverse and vibrant state in western India known for its rich history, cultural heritage, and economic significance."
+    },
+    {
+        name: "Manipur, Imphal",
+        image: "https://www.fabhotels.com/blog/wp-content/uploads/2020/05/Manipur1.jpg",
+        description: "A state in northeastern India known for its rich cultural heritage, scenic landscapes, and diverse ethnic communities."
+    },
+    {
+        name: "Meghalaya, Shillong",
+        image: "https://www.holidify.com/images/bgImages/NONGPOH.jpg",
+        description: "A northeastern Indian state known for its lush landscapes, vibrant culture, and abundant rainfall."
+    },
+    {
+        name: "Mizoram, Aizawl",
+        image: "https://www.offbeatstays.in/wp-content/uploads/2021/01/Toipui_Tuipui_river_Mizoram_India.jpg",
+        description: "A picturesque state in northeastern India known for its lush hills, vibrant tribal culture, and scenic landscapes."
+    },
+    {
+        name: "Nagaland, Kohima",
+        image: "https://www.incredible-northeastindia.com/images/nagaland-head.jpg",
+        description: "A state in northeastern India known for its rich cultural heritage, diverse tribal communities, and lush landscapes."
+    },
+    {
+        name: "Odisha, Bhubaneshwar",
+        image: "https://thumbs.dreamstime.com/b/view-lingaraja-temple-complex-bhubaneswar-india-odisha-view-lingaraja-temple-complex-bhubaneswar-odisha-india-165731841.jpg",
+        description: "An Indian state on the eastern coast known for its rich cultural heritage, historic temples, and beautiful beaches."
+    },
+    {
+        name: "Punjab, Chandigarh",
+        image: "https://media.istockphoto.com/id/1421834396/photo/various-views-of-the-golden-temple-at-night-amritsar.jpg?s=612x612&w=0&k=20&c=k61fmzcnVJuDzQ-8Z61AaSR1X4jgWFyD2_KvwM8OwE4=",
+        description: "A culturally rich state in northern India, known for its vibrant traditions, agriculture, and historical significance."
+    },
+    {
+        name: "Rajasthan, Jaipur",
+        image: "https://media.istockphoto.com/id/1224021113/photo/indian-cameleers-camel-driver-with-camel-silhouettes-in-dunes-on-sunset-jaisalmer-rajasthan.jpg?s=612x612&w=0&k=20&c=MeF2Dl4ya1NVOWM_I_xo3EPd8E-iazBghYhjiyRaTcU=",
+        description: "A vibrant state in northern India known for its rich history, majestic palaces, and vast deserts."
+    },
+    {
+        name: "Sikkim, Gangtok",
+        image: "https://images.unsplash.com/photo-1573398643956-2b9e6ade3456?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        description: "Sikkim is a small, mountainous state in northeastern India, known for its stunning landscapes, rich biodiversity, and vibrant cultural heritage."
+    },
+    {
+        name: "TamilNadu, Chennai",
+        image: "https://img.nayatrip.com/images/state/big/TAMIL-NADU.jpg",
+        description: "A state in southern India known for its rich cultural heritage, ancient temples, and vibrant traditions."
+    },
+    {
+        name: "Telengana, Hyderabad",
+        image: "https://www.delhimetrotimes.in/images/telangana-tourism.jpg",
+        description: "A state in southern India, known for its rich cultural heritage, historic monuments, and IT industry hub in Hyderabad, its capital."
+    },
+    {
+        name: "Tripura, Agartala",
+        image: "https://thumbs.dreamstime.com/b/maharaja-radha-kishore-manikya-debbarma-built-ujjayanta-palace-also-known-as-palace-kingdom-tripura-319789821.jpg",
+        description: "A small northeastern state of India known for its rich cultural heritage, scenic landscapes, and diverse tribal communities."
+    },
+    {
+        name: "Uttar Pradesh, Lucknow",
+        image: "https://i.pinimg.com/736x/28/32/72/2832723df32778663c10e43bca8da436.jpg",
+        description: "Populous state in northern India, known for its rich cultural heritage, historical monuments, and the cities of Varanasi and Agra."
+    },
+    {
+        name: "Uttarakhand, Dehradun(w), Gairsain(s)",
+        image: "https://plus.unsplash.com/premium_photo-1697730398251-40cd8dc57e0b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dXR0YXJha2hhbmQlMjBpbmRpYXxlbnwwfHwwfHx8MA%3D%3D",
+        description: "Known for its scenic Himalayan landscapes, spiritual sites, and rich cultural heritage."
+    },
+    {
+        name: "West Bengal, Kolkata",
+        image: "https://static.javatpoint.com/tourist-places/images/tourist-places-in-west-bengal1.png",
+        description: "An eastern Indian state known for its rich cultural heritage, diverse landscapes, and bustling capital city, Kolkata."
+    },
 ];
 
 // Function to load vacation places into the grid
