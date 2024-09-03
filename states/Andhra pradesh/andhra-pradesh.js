@@ -68,42 +68,42 @@ function calculateCost() {
 const vacationPlaces = [
     {
         name: "Visakhapatnam",
-        image: "https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/newsletter/eiffel-tower-in-paris-151-medium.jpg?1564742900",
+        image: "https://t4.ftcdn.net/jpg/01/26/19/49/360_F_126194923_SabbAZXpE55qmSId97smmkXpisks3lWL.jpg",
         description: "The city of lights and romance, known for the Eiffel Tower and its rich history.",
     },
     {
         name: "Vijayawada",
-        image: "https://img.freepik.com/free-photo/bali-pagoda-sunrise-indonesia_1150-11013.jpg?size=626&ext=jpg&ga=GA1.1.1054264010.1725272696&semt=ais_hybrid",
+        image: "https://thumbs.dreamstime.com/b/prakasam-barrage-vijayawada-prakasam-barrage-vijayawada-india-97911939.jpg",
         description: "A tropical paradise famous for its beaches, temples, and vibrant culture."
     },
     {
         name: "Guntur",
-        image: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/02/23/18/kyoto-main.jpg?quality=75&width=1250&crop=3%3A2%2Csmart&auto=webp",
+        image: "https://www.shutterstock.com/image-photo/kondaveedu-ghat-road-aerial-view-260nw-2329021689.jpg",
         description: "A city of classical Buddhist temples, beautiful gardens, and traditional wooden houses."
     },
     {
         name: "Nellore",
-        image: "https://plus.unsplash.com/premium_photo-1682656220562-32fde8256295?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmV3JTIweW9yayUyMGNpdHl8ZW58MHx8MHx8fDA%3D",
+        image: "https://thumbs.dreamstime.com/b/ranganayakula-temple-udayagiri-andhra-pradesh-hindu-dedicated-to-lord-vishnu-located-town-nellore-district-india-285129877.jpg",
         description: "The city that never sleeps, known for Times Square, Central Park, and Broadway."
     },
     {
         name: "Kurnool",
-        image: "https://via.placeholder.com/300x200?text=Sydney",
+        image: "https://thumbs.dreamstime.com/b/figures-deities-goddess-gandikota-kurnool-andhra-pradesh-figures-deities-goddess-gandikota-kurnool-andhra-234747472.jpg",
         description: "Home to the iconic Sydney Opera House and beautiful beaches like Bondi Beach."
     },
     {
         name: "Kakinada",
-        image: "https://via.placeholder.com/300x200?text=Cape+Town",
+        image: "https://as1.ftcdn.net/v2/jpg/04/26/25/20/1000_F_426252026_2OOFu9WQK3wY41MqRTGytzMNzPB4p7Ph.jpg",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
         name: "Rajamahendravaram",
-        image: "https://via.placeholder.com/300x200?text=Cape+Town",
+        image: "https://t3.ftcdn.net/jpg/04/89/31/58/360_F_489315853_eUiIVsImhB4dRai5mf7r02bEZukj4jya.jpg",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
         name: "Kadapa",
-        image: "https://via.placeholder.com/300x200?text=Cape+Town",
+        image: "https://cdn.pixabay.com/photo/2019/12/13/19/45/mountains-4693731_1280.jpg",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
