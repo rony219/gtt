@@ -276,34 +276,52 @@ function calculateCost() {
         <p>Total Cost: $${totalCost}</p>
     `;
 }
-const states = [
-    "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", 
-    "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", 
-    "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", 
-    "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", 
-    "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", 
-    "Uttar Pradesh", "Uttarakhand", "West Bengal"
+// Function to handle form submission
+document.getElementById('booking-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const hotel = document.getElementById('hotel').value;
+    const checkin = document.getElementById('checkin').value;
+    const checkout = document.getElementById('checkout').value;
+    const guests = document.getElementById('guests').value;
+    const foodMenu = document.getElementById('food-menu').value;
+
+    // Booking confirmation message
+    alert(`Booking confirmed for ${hotel}\nCheck-in: ${checkin}\nCheck-out: ${checkout}\nGuests: ${guests}\nFood Plan: ${foodMenu}`);
+});
+
+// List of cities in India (can be extended or fetched from an API)
+const cities = [
+    "Mumbai", "Delhi", "Bengaluru", "Hyderabad", "Ahmedabad", 
+    "Chennai", "Kolkata", "Surat", "Pune", "Jaipur", 
+    "Lucknow", "Kanpur", "Nagpur", "Visakhapatnam", "Indore",
+    "Thane", "Bhopal", "Patna", "Vadodara", "Ghaziabad",
+    "Ludhiana", "Agra", "Nashik", "Faridabad", "Meerut",
+    "Rajkot", "Kalyan", "Vasai-Virar", "Varanasi", "Srinagar",
+    "Aurangabad", "Dhanbad", "Amritsar", "Navi Mumbai", "Allahabad"
 ];
 
-const searchBox = document.getElementById('searchBox');
-const stateList = document.getElementById('stateList');
+// Function to filter cities based on input and show suggestions
+function filterCities() {
+    const input = document.getElementById('city-input').value.toLowerCase();
+    const suggestionsList = document.getElementById('city-suggestions');
+    suggestionsList.innerHTML = '';
 
-function displayStates(filteredStates) {
-    stateList.innerHTML = "";
-    filteredStates.forEach(state => {
-        const li = document.createElement('li');
-        li.textContent = state;
-        stateList.appendChild(li);
-    });
+    if (input) {
+        const filteredCities = cities.filter(city => city.toLowerCase().includes(input));
+        suggestionsList.style.display = filteredCities.length ? 'block' : 'none';
+        filteredCities.forEach(city => {
+            const li = document.createElement('li');
+            li.textContent = city;
+            li.onclick = () => selectCity(city);
+            suggestionsList.appendChild(li);
+        });
+    } else {
+        suggestionsList.style.display = 'none';
+    }
 }
 
-function filterStates() {
-    const searchTerm = searchBox.value.toLowerCase();
-    const filteredStates = states.filter(state => state.toLowerCase().includes(searchTerm));
-    displayStates(filteredStates);
+// Function to set the input value to the selected city from suggestions
+function selectCity(city) {
+    document.getElementById('city-input').value = city;
+    document.getElementById('city-suggestions').style.display = 'none';
 }
-
-searchBox.addEventListener('input', filterStates);
-
-// Display all states initially
-displayStates(states);

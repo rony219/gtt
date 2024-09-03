@@ -118,4 +118,88 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Booking App</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#hotels">Hotels</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="search">
+        <h2>Find Hotels by City</h2>
+        <input type="text" id="city-input" placeholder="Enter city name" aria-label="City name" oninput="filterCities()">
+        <ul id="city-suggestions" class="suggestions-list" aria-label="City suggestions">
+            <!-- City suggestions will be populated here -->
+        </ul>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Stay</h2>
+        <form id="booking-form" onsubmit="return validateDates()">
+            <label for="hotel">Hotel:</label>
+            <select id="hotel" required>
+                <option value="">Select Hotel</option>
+                <option value="Hotel Sunshine">Hotel Sunshine</option>
+                <option value="Sea View Resort">Sea View Resort</option>
+            </select>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" required aria-label="Check-in date">
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" required aria-label="Check-out date">
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" min="1" max="10" required aria-label="Number of guests">
+
+            <label for="food-menu">Food Menu:</label>
+            <select id="food-menu" required aria-label="Food menu selection">
+                <option value="">Select Food Items</option>
+                <option value="Breakfast Only">Breakfast Only</option>
+                <option value="Breakfast and Lunch">Breakfast and Lunch</option>
+                <option value="Full Board">Full Board (Breakfast, Lunch, Dinner)</option>
+                <option value="All Inclusive">All Inclusive (All Meals and Drinks)</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Hotel Booking App</p>
+    </footer>
+
+    <script>
+        function filterCities() {
+            // Implement city filtering logic here
+        }
+
+        function validateDates() {
+            const checkin = document.getElementById('checkin').value;
+            const checkout = document.getElementById('checkout').value;
+
+            if (checkin && checkout && checkin >= checkout) {
+                alert('Check-out date must be after check-in date.');
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
 
