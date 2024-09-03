@@ -65,129 +65,133 @@ function calculateCost() {
     costOutput.textContent = `Total cost for ${stayLength} nights: $${totalCost}`;
 }
 // Sample data for vacation places
+
+
+
+
 const vacationPlaces = [
     {
-        name: "Visakhapatnam",
+        name: "Goalpara",
         image: "https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/newsletter/eiffel-tower-in-paris-151-medium.jpg?1564742900",
         description: "The city of lights and romance, known for the Eiffel Tower and its rich history.",
     },
     {
-        name: "Vijayawada",
+        name: "Guwahati",
         image: "https://img.freepik.com/free-photo/bali-pagoda-sunrise-indonesia_1150-11013.jpg?size=626&ext=jpg&ga=GA1.1.1054264010.1725272696&semt=ais_hybrid",
         description: "A tropical paradise famous for its beaches, temples, and vibrant culture."
     },
     {
-        name: "Guntur",
+        name: "Dibrugarh",
         image: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/02/23/18/kyoto-main.jpg?quality=75&width=1250&crop=3%3A2%2Csmart&auto=webp",
         description: "A city of classical Buddhist temples, beautiful gardens, and traditional wooden houses."
     },
     {
-        name: "Nellore",
+        name: "Nagaon",
         image: "https://plus.unsplash.com/premium_photo-1682656220562-32fde8256295?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmV3JTIweW9yayUyMGNpdHl8ZW58MHx8MHx8fDA%3D",
         description: "The city that never sleeps, known for Times Square, Central Park, and Broadway."
     },
     {
-        name: "Kurnool",
+        name: "Jorhat",
         image: "https://via.placeholder.com/300x200?text=Sydney",
         description: "Home to the iconic Sydney Opera House and beautiful beaches like Bondi Beach."
     },
     {
-        name: "Kakinada",
+        name: "Tezpur",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Rajamahendravaram",
+        name: "Dhubri",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Kadapa",
+        name: "Tinsukia",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Mangalagiri-Tadepalli",
+        name: "Silchar",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Tirupati",
+        name: "North Lakhimpur",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Anantapuram",
+        name: "Diphu",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Ongole",
+        name: "Mangaldoi",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Vizianagaram",
+        name: "Sivasagar",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Eluru",
+        name: "Golaghat",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Proddatur",
+        name: "Dhekiajuli",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Nandyal",
+        name: "Barpeta",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Adoni",
+        name: "Nalbari",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Madanapalle",
+        name: "Sonari",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Machilipatnam",
+        name: "Lanka",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Tenali",
+        name: "Bongaigaon",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Chittoor",
+        name: "Dergaon",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Hindupur",
+        name: "Karimganj",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "	Srikakulam",
+        name: "Hailakandi",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Bhimavaram",
+        name: "Kokrajhar",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Tadepalligudem",
+        name: "Lumding",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
