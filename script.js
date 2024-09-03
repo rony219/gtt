@@ -20,26 +20,36 @@ const hotels = [
     }
 ];
 
-// Function to search hotels by location
-function searchHotels() {
-    const location = document.getElementById('location-search').value.toLowerCase();
-    const hotelListing = document.getElementById('hotel-listing');
-    hotelListing.innerHTML = ''; // Clear previous results
+// Function to filter cities based on input and show suggestions
+function filterCities() {
+    const input = document.getElementById('city-input').value.toLowerCase();
+    const suggestionsList = document.getElementById('city-suggestions');
+    suggestionsList.innerHTML = '';
 
-    const filteredHotels = hotels.filter(hotel => hotel.location.toLowerCase().includes(location));
-    
-    filteredHotels.forEach(hotel => {
-        const hotelCard = document.createElement('div');
-        hotelCard.classList.add('hotel-card');
-        hotelCard.innerHTML = `
-            <img src="${hotel.image}" alt="${hotel.name}">
-            <h3>${hotel.name}</h3>
-            <p>${hotel.description}</p>
-            <button onclick="showHotelDetails(${hotel.id})">View Details</button>
-        `;
-        hotelListing.appendChild(hotelCard);
-    });
+    if (input) {
+        const filteredCities = cities.filter(city => city.toLowerCase().includes(input));
+        
+        // Sort the filtered cities to prioritize those that start with the input
+        filteredCities.sort((a, b) => {
+            const aStartsWith = a.toLowerCase().startsWith(input);
+            const bStartsWith = b.toLowerCase().startsWith(input);
+            if (aStartsWith && !bStartsWith) return -1;
+            if (!aStartsWith && bStartsWith) return 1;
+            return a.localeCompare(b); // If both start or both don't, sort alphabetically
+        });
+
+        suggestionsList.style.display = filteredCities.length ? 'block' : 'none';
+        filteredCities.forEach(city => {
+            const li = document.createElement('li');
+            li.textContent = city;
+            li.onclick = () => selectCity(city);
+            suggestionsList.appendChild(li);
+        });
+    } else {
+        suggestionsList.style.display = 'none';
+    }
 }
+
 
 // Function to display hotel details
 function showHotelDetails(hotelId) {
@@ -291,13 +301,12 @@ document.getElementById('booking-form').addEventListener('submit', function (eve
 
 // List of cities in India (can be extended or fetched from an API)
 const cities = [
-    "Mumbai", "Delhi", "Bengaluru", "Hyderabad", "Ahmedabad", 
-    "Chennai", "Kolkata", "Surat", "Pune", "Jaipur", 
-    "Lucknow", "Kanpur", "Nagpur", "Visakhapatnam", "Indore",
-    "Thane", "Bhopal", "Patna", "Vadodara", "Ghaziabad",
-    "Ludhiana", "Agra", "Nashik", "Faridabad", "Meerut",
-    "Rajkot", "Kalyan", "Vasai-Virar", "Varanasi", "Srinagar",
-    "Aurangabad", "Dhanbad", "Amritsar", "Navi Mumbai", "Allahabad"
+    "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", 
+    "Goa", "Gujrat", "Haryana", "Himachal Pradesh", "Jharkhand", 
+    "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur",
+    "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab",
+    "Rajasthan", "Sikkim", "Tamil nadu", "Telengana", "Tripura",
+    "Uttar Pradesh", "Uttarakhand", "West Bengal",
 ];
 
 // Function to filter cities based on input and show suggestions
