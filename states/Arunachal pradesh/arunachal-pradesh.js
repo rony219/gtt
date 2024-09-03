@@ -67,166 +67,160 @@ function calculateCost() {
 // Sample data for vacation places
 const vacationPlaces = [
     {
-        name: "Visakhapatnam",
+        name: "Mipi",
         image: "https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/newsletter/eiffel-tower-in-paris-151-medium.jpg?1564742900",
         description: "The city of lights and romance, known for the Eiffel Tower and its rich history.",
     },
     {
-        name: "Vijayawada",
+        name: "Bomdila",
         image: "https://img.freepik.com/free-photo/bali-pagoda-sunrise-indonesia_1150-11013.jpg?size=626&ext=jpg&ga=GA1.1.1054264010.1725272696&semt=ais_hybrid",
         description: "A tropical paradise famous for its beaches, temples, and vibrant culture."
     },
     {
-        name: "Guntur",
+        name: "Zemithang",
         image: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/02/23/18/kyoto-main.jpg?quality=75&width=1250&crop=3%3A2%2Csmart&auto=webp",
         description: "A city of classical Buddhist temples, beautiful gardens, and traditional wooden houses."
     },
     {
-        name: "Nellore",
+        name: "Dirang",
         image: "https://plus.unsplash.com/premium_photo-1682656220562-32fde8256295?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmV3JTIweW9yayUyMGNpdHl8ZW58MHx8MHx8fDA%3D",
         description: "The city that never sleeps, known for Times Square, Central Park, and Broadway."
     },
     {
-        name: "Kurnool",
+        name: "Seppa",
         image: "https://via.placeholder.com/300x200?text=Sydney",
         description: "Home to the iconic Sydney Opera House and beautiful beaches like Bondi Beach."
     },
     {
-        name: "Kakinada",
+        name: "Tawang",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Rajamahendravaram",
+        name: "Thingbu",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Kadapa",
+        name: "Dambuk",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Mangalagiri-Tadepalli",
+        name: "Rupa",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Tirupati",
+        name: "Wakro",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Anantapuram",
+        name: "Bameng",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Ongole",
+        name: "Pakke-Kessang",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Vizianagaram",
+        name: "Anini",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Eluru",
+        name: "Singchung",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Proddatur",
+        name: "Thembang",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Nandyal",
+        name: "Mia",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Adoni",
+        name: "Yingkiong",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Madanapalle",
+        name: "Basar",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Machilipatnam",
+        name: "Sangram",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Tenali",
+        name: "Hayuliang",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Chittoor",
+        name: "Yingkiong",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Hindupur",
+        name: "Sangram",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "	Srikakulam",
+        name: "Basar",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Bhimavaram",
+        name: "Aalo",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Tadepalligudem",
+        name: "Tirap",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Guntakal",
+        name: "Aliney",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Dharmavaram",
+        name: "Pasighat",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Gudivada",
+        name: "Papum Pare",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Narasaraopet	",
+        name: "Tezu",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Kadiri",
+        name: "Tezu",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
-        name: "Tadipatri",
-        image: "https://via.placeholder.com/300x200?text=Cape+Town",
-        description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
-    },
-    {
-        name: "	Chilakaluripet",
+        name: "Along",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     }
-
     
 ];
 
