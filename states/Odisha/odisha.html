@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Hotel / Vacation Booking App</h1>
+    </header>
+
+    <main>
+        <!-- Search Section -->
+        <section id="search-section">
+            <h2>Find Hotels by Location</h2>
+            <input type="text" id="location-search" placeholder="Enter a location">
+            <button onclick="searchHotels()">Search</button>
+        </section>
+
+        <!-- Hotel Listing Section -->
+        <section id="hotel-listing">
+            <!-- This section will be populated by JavaScript -->
+        </section>
+
+        <!-- Hotel Details Section -->
+        <section id="hotel-details">
+            <h2>Hotel Details</h2>
+            <div id="hotel-info">
+                <!-- This section will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking-section">
+            <h2>Book Your Stay</h2>
+            <label for="stay-length">Number of Nights:</label>
+            <input type="number" id="stay-length" value="1" min="1">
+            <button onclick="calculateCost()">Calculate Cost</button>
+            <p id="cost-output"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Destinations</title>
+    <link rel="stylesheet" href="odisha.css">
+</head>
+<body>
+    <header>
+        <h1>Explore Vacation Destinations Around Andhra Pradesh</h1>
+    </header>
+
+    <main>
+        <!-- Vacation Places Grid -->
+        <section id="vacation-grid">
+            <!-- Cards will be dynamically populated here -->
+        </section>
+    </main>
+
+    <script src="odisha.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Form</title>
+    <link rel="stylesheet" href="odisha.css">
+</head>
+<body>
+    <header>
+        <h1>Book Your Hotel Stay</h1>
+    </header>
+
+    <main>
+        <!-- Booking Form -->
+        <section id="booking-form-section">
+            <h2>Hotel Booking Form</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="checkin-date">Check-in Date:</label>
+                    <input type="date" id="checkin-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout-date">Check-out Date:</label>
+                    <input type="date" id="checkout-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" min="1" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="room-type">Room Type:</label>
+                    <select id="room-type">
+                        <option value="standard">Standard - $100/night</option>
+                        <option value="deluxe">Deluxe - $150/night</option>
+                        <option value="suite">Suite - $200/night</option>
+                    </select>
+                </div>
+                <button type="button" onclick="calculateCost()">Calculate Cost</button>
+            </form>
+
+            <div id="booking-summary">
+                <!-- Booking summary will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="odisha.js"></script>
+</body>
+</html>
+
