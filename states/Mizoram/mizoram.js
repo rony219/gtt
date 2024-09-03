@@ -15,7 +15,7 @@ const hotels = [
         location: "Miami",
         image: "https://via.placeholder.com/150",
         pricePerNight: 150,
-        description: "A lovely beach resort with stunning views.",
+        description: "A lovely beach resort with stunning views.", 
         foodMenu: ["Seafood", "Sushi", "Steak"]
     }
 ];
@@ -67,35 +67,60 @@ function calculateCost() {
 // Sample data for vacation places
 const vacationPlaces = [
     {
-        name: "Paris, France",
-        image: "https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/newsletter/eiffel-tower-in-paris-151-medium.jpg?1564742900",
-        description: "The city of lights and romance, known for the Eiffel Tower and its rich history.",
+        name: "Aizawl",
+        image: "https://live.staticflickr.com/2523/3879356619_d62734eb83_b.jpg",
+        description: "Aizawl is the scenic capital city of Mizoram, India, known for its picturesque landscapes and rich cultural heritage.",
     },
     {
-        name: "Bali, Indonesia",
-        image: "https://img.freepik.com/free-photo/bali-pagoda-sunrise-indonesia_1150-11013.jpg?size=626&ext=jpg&ga=GA1.1.1054264010.1725272696&semt=ais_hybrid",
-        description: "A tropical paradise famous for its beaches, temples, and vibrant culture."
+        name: "Champhai",
+        image: "https://www.shutterstock.com/image-photo/panoramic-view-town-champhai-mizoram-600nw-1460596550.jpg",
+        description: "Champhai is a picturesque town in Mizoram, India, known for its scenic beauty, vibrant culture, and proximity to the Indo-Myanmar border."
     },
     {
-        name: "Kyoto, Japan",
-        image: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/02/23/18/kyoto-main.jpg?quality=75&width=1250&crop=3%3A2%2Csmart&auto=webp",
-        description: "A city of classical Buddhist temples, beautiful gardens, and traditional wooden houses."
+        name: "Hnahthial",
+        image: "https://photos.wikimapia.org/p/00/02/71/54/69_big.jpg",
+        description: "Hnahthial is a town in Mizoram, India, known for its scenic beauty and cultural significance"
     },
     {
-        name: "New York City, USA",
-        image: "https://plus.unsplash.com/premium_photo-1682656220562-32fde8256295?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmV3JTIweW9yayUyMGNpdHl8ZW58MHx8MHx8fDA%3D",
-        description: "The city that never sleeps, known for Times Square, Central Park, and Broadway."
+        name: "Khawzawl",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKr1F0ROT3PzTRyYjeXRm0V7X9g6mcZBrZZQ&s",
+        description: "Khawzawl is a town in Mizoram, India, known for its scenic beauty and vibrant culture."
     },
     {
-        name: "Sydney, Australia",
-        image: "https://via.placeholder.com/300x200?text=Sydney",
-        description: "Home to the iconic Sydney Opera House and beautiful beaches like Bondi Beach."
+        name: "Kolasib",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvMiw--rLodIG2LNFMPvG3stpezTOWWFWBQ&s",
+        description: "Kolasib is a town in Mizoram, India, known for its picturesque landscapes and as a hub for trade and agriculture.
     },
     {
-        name: "Cape Town, South Africa",
+        name: "Lawngtlai",
         image: "https://via.placeholder.com/300x200?text=Cape+Town",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
-    }
+    },
+    {
+        name: "Lunglei",
+        image: "https://via.placeholder.com/300x200?text=Cape+Town",
+        description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
+    },
+    {
+        name: "Mamit",
+        image: "https://via.placeholder.com/300x200?text=Cape+Town",
+        description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
+    },
+    {
+        name: "saitual",
+        image: "https://via.placeholder.com/300x200?text=Cape+Town",
+        description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
+    },
+    {
+        name: "serchhip",
+        image: "https://via.placeholder.com/300x200?text=Cape+Town",
+        description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
+    },
+    {
+        name: "siaha",
+        image: "https://via.placeholder.com/300x200?text=Cape+Town",
+        description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
+    },
 ];
 
 // Function to load vacation places into the grid
