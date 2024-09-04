@@ -108,12 +108,12 @@ const vacationPlaces = [
     },
     {
         name: "Mangalagiri-Tadepalli",
-        image: "https://via.placeholder.com/300x200?text=Cape+Town",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Mangalagiri_town.jpg/1024px-Mangalagiri_town.jpg",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
         name: "Tirupati",
-        image: "https://via.placeholder.com/300x200?text=Cape+Town",
+        image: "https://static.theprint.in/wp-content/uploads/2020/06/Tirupati-e1597050074221.jpg",
         description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
     },
     {
