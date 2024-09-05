@@ -185,7 +185,7 @@ body {
 
 /* Header Styling */
 header {
-    background: #007BFF;
+    background: #0026ff;
     color: white;
     padding: 20px;
     text-align: center;
@@ -231,7 +231,7 @@ nav ul li a:hover {
 }
 
 #city-input:focus {
-    border-color: #007BFF;
+    border-color: #5100ff;
     outline: none;
 }
 
@@ -273,7 +273,7 @@ nav ul li a:hover {
 
 #booking h2 {
     margin-bottom: 20px;
-    color: #007BFF;
+    color: #006eff;
 }
 
 /* Booking Form Styling */

@@ -80,11 +80,13 @@ const vacationPlaces = [
         name: "Andra Pradesh, Hyderabad",
         image: "https://media.istockphoto.com/id/1351964928/photo/araku-valley-visakhapatnam-andhra-pradesh-india.jpg?s=612x612&w=0&k=20&c=Mev1sG0qcWTCqzhoOaoALYrQFZnVHhqDif7CF4xfEhE=",
         description: "Known for its rich culture, heritage, and the famous Tirupati temple.",
+        dest: "/states/Andhra-pradesh/andhra-pradesh.html"
     },
     {
         name: "Arunachal Pradesh, Itanagar",
         image: "https://i.pinimg.com/originals/b6/9b/df/b69bdfd5fad4e3b9191fc80c0702fba0.jpg",
-        description: "The land of dawn-lit mountains, famous for its biodiversity."
+        description: "The land of dawn-lit mountains, famous for its biodiversity.",
+        dest: "/states/Arunachal-pradesh/arunachal-pradesh.html"
     },
     {
         name: "Assam, Dispur",
@@ -227,7 +229,7 @@ function loadVacationPlaces() {
         card.innerHTML = `
             <img src="${place.image}" alt="${place.name}">
             <div class="vacation-card-content">
-                <h3>${place.name}</h3>
+                <a href="${place.dest}"><h3>${place.name}</h3></a>
                 <p>${place.description}</p>
             </div>
         `;
