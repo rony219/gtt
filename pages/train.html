@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="booking-form">
+        <h1>Train Ticket Booking</h1>
+        <h3>IRCTC Authorized e-ticketing</h3>
+
+        <form action="" method="post" class="form-container">
+            <div class="trip-type">
+                <label><input type="radio" name="booking_type" value="book_ticket" checked> Book Train Tickets</label>
+                <label><input type="radio" name="booking_type" value="check_pnr"> Check PNR Status</label>
+                <label><input type="radio" name="booking_type" value="live_status"> Live Train Status</label>
+            </div>
+
+            <div class="input-fields">
+                <div class="field">
+                    <label for="from">From</label>
+                    <input type="text" id="from" name="from" placeholder="MAS, Chennai Central Railway Station">
+                </div>
+                <div class="field">
+                    <label for="to">To</label>
+                    <input type="text" id="to" name="to" placeholder="HWH, Kolkata Howrah Junction">
+                </div>
+            </div>
+
+            <div class="input-fields">
+                <div class="field">
+                    <label for="travel_date">Travel Date</label>
+                    <input type="date" id="travel_date" name="travel_date" value="2024-09-08">
+                </div>
+                <div class="field">
+                    <label for="class">Class</label>
+                    <select id="class" name="class">
+                        <option value="all">ALL</option>
+                        <option value="sleeper">Sleeper</option>
+                        <option value="ac1">1st AC</option>
+                        <option value="ac2">2nd AC</option>
+                        <option value="ac3">3rd AC</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="search-btn">Search</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
