@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="booking-form">
+        <h1>Book International and Domestic Flights</h1>
+        
+        <form action="" method="post" class="form-container">
+            <div class="trip-type">
+                <label><input type="radio" name="trip" value="oneway" checked> One Way</label>
+                <label><input type="radio" name="trip" value="roundtrip"> Round Trip</label>
+                <label><input type="radio" name="trip" value="multicity"> Multi City</label>
+            </div>
+
+            <div class="input-fields">
+                <div class="field">
+                    <label for="from">From</label>
+                    <input type="text" id="from" name="from" placeholder="DEL, Delhi Airport India">
+                </div>
+                <div class="field">
+                    <label for="to">To</label>
+                    <input type="text" id="to" name="to" placeholder="BLR, Bengaluru International Airport">
+                </div>
+            </div>
+
+            <div class="input-fields">
+                <div class="field">
+                    <label for="departure">Departure</label>
+                    <input type="date" id="departure" name="departure" value="2024-09-08">
+                </div>
+                <div class="field">
+                    <label for="return">Return (Optional)</label>
+                    <input type="date" id="return" name="return" placeholder="Select Return Date">
+                </div>
+            </div>
+
+            <div class="passenger-class">
+                <label for="travellers">Travellers & Class</label>
+                <select id="travellers" name="travellers">
+                    <option value="1">1 Traveller</option>
+                    <option value="2">2 Travellers</option>
+                    <option value="3">3 Travellers</option>
+                </select>
+                <select id="class" name="class">
+                    <option value="economy">Economy</option>
+                    <option value="premium">Premium Economy</option>
+                    <option value="business">Business</option>
+                </select>
+            </div>
+
+            <div class="special-fare">
+                <label>Select a special fare</label>
+                <div class="fare-options">
+                    <label><input type="radio" name="fare" value="regular" checked> Regular</label>
+                    <label><input type="radio" name="fare" value="student"> Student</label>
+                    <label><input type="radio" name="fare" value="senior"> Senior Citizen</label>
+                    <label><input type="radio" name="fare" value="armed"> Armed Forces</label>
+                    <label><input type="radio" name="fare" value="doctor"> Doctor and Nurses</label>
+                </div>
+            </div>
+
+            <button type="submit" class="search-btn">Search</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
