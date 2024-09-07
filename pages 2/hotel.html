@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Search</title>
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+    <div class="search-container">
+        <form id="hotel-search-form">
+            <div class="input-group">
+                <label for="location">Enter City Name, Location, or Specific hotel</label>
+                <input type="text" id="location" name="location" placeholder="New Delhi" required>
+            </div>
+
+            <div class="input-group">
+                <label for="checkin">Check-In</label>
+                <input type="date" id="checkin" name="checkin" required>
+            </div>
+
+            <div class="input-group">
+                <label for="checkout">Check-Out</label>
+                <input type="date" id="checkout" name="checkout" required>
+            </div>
+
+            <div class="input-group">
+                <label for="guests">Rooms & Guests</label>
+                <select id="guests" name="guests">
+                    <option value="1">1 Room 2 Guests</option>
+                    <option value="2">2 Rooms 4 Guests</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <button type="submit" class="search-button">SEARCH</button>
+        </form>
+    </div>
+
+    <script src="hotel.js"></script>
+</body>
+</html>
+
+
