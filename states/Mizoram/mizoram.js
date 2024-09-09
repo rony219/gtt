@@ -15,7 +15,7 @@ const hotels = [
         location: "Miami",
         image: "https://via.placeholder.com/150",
         pricePerNight: 150,
-        description: "A lovely beach resort with stunning views.", 
+        description: "A lovely beach resort with stunning views.",
         foodMenu: ["Seafood", "Sushi", "Steak"]
     }
 ];
@@ -79,7 +79,7 @@ const vacationPlaces = [
     {
         name: "Hnahthial",
         image: "https://photos.wikimapia.org/p/00/02/71/54/69_big.jpg",
-        description: "Hnahthial is a town in Mizoram, India, known for its scenic beauty and cultural significance"
+        description: "Hnahthial is a town in Mizoram, India, known for its scenic beauty and cultural significance."
     },
     {
         name: "Khawzawl",
@@ -89,38 +89,38 @@ const vacationPlaces = [
     {
         name: "Kolasib",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvMiw--rLodIG2LNFMPvG3stpezTOWWFWBQ&s",
-        description: "Kolasib is a town in Mizoram, India, known for its picturesque landscapes and as a hub for trade and agriculture.
+        description: "Kolasib is a town in Mizoram, India, known for its picturesque landscapes and as a hub for trade and agriculture."
     },
     {
         name: "Lawngtlai",
-        image: "https://via.placeholder.com/300x200?text=Cape+Town",
-        description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
+        image: "https://tripindia.co.in//uploads/Lawngtlai1.jpg",
+        description: "Lawngtlai is a town and the administrative headquarters of Lawngtlai district in the southern part of Mizoram, India, known for its scenic beauty and diverse ethnic communities."
     },
     {
         name: "Lunglei",
-        image: "https://via.placeholder.com/300x200?text=Cape+Town",
-        description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
+        image: "https://tcsg.in/uploads/places/850X450/lunglei_1631934827-4199e.jpg",
+        description: "Lunglei is a scenic town in southern Mizoram, India, known for its picturesque landscapes, cultural heritage, and hilly terrain."
     },
     {
         name: "Mamit",
-        image: "https://via.placeholder.com/300x200?text=Cape+Town",
-        description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
+        image: "https://www.tourmyindia.com/socialimg/mamit-mizoram.jpg",
+        description: "Mamit is a picturesque town located in the northeastern Indian state of Mizoram, known for its scenic landscapes and cultural diversity."
     },
     {
-        name: "saitual",
-        image: "https://via.placeholder.com/300x200?text=Cape+Town",
-        description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
+        name: "saitual.",
+        image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxx2CjHLrnH-b8gDygOTMb3PfteDSjYZj8ODOtnVR0CMUKWpb4p8Pn8cpX_6EoYdsmVuR-Sv1UVzTx-XspDRF2vwriMbUts4GjRSD9SsdTN4UeaKO0flWp01GJRW4Zpf1Gn5NNzWmYJc/s1600/saitual.jpg",
+        description: "Saitual is a small town located in the northeastern state of Mizoram, India, known for its scenic landscapes and peaceful environment."
     },
     {
         name: "serchhip",
-        image: "https://via.placeholder.com/300x200?text=Cape+Town",
-        description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
+        image: "https://img.nayatrip.com/images/sightseeing/big/5799.jpg",
+        description: "Serchhip is a town in northeastern India, located in the state of Mizoram, known for its scenic landscapes and as an administrative and commercial hub."
     },
     {
         name: "siaha",
-        image: "https://via.placeholder.com/300x200?text=Cape+Town",
-        description: "A coastal city with a rich history, stunning landscapes, and Table Mountain."
-    },
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr70HgKyTvaX7tmBp0ae6Cy33tot_gjbHeVg&s",
+        description: "Siaha is a town in the Indian state of Mizoram, known for its scenic beauty and as the headquarters of the Mara Autonomous District Council."
+    }
 ];
 
 // Function to load vacation places into the grid
