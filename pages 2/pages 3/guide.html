@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page - Global Tracker Travels</title>
+    <link rel="stylesheet" href="guide.css">
+</head>
+<body>
+    <header>
+        <h1>Booking Form</h1>
+    </header>
+
+    <section class="booking-form">
+        <h2>Book Your Trip</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="date">Date of Travel:</label>
+            <input type="date" id="date" name="date" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <style>
+        .booking-form {
+            padding: 40px;
+            text-align: center;
+            background-color: #fff;
+            margin: 50px auto;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label, input {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        input[type="submit"] {
+            background-color: #008cba;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+    </style>
+</body>
+</html>

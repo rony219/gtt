@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #008cba;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-section {
+    background: url('https://source.unsplash.com/1600x900/?travel') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-section h2 {
+    font-size: 3em;
+}
+
+button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.services-section, .contact-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+}
