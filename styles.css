@@ -185,7 +185,7 @@ body {
 
 /* Header Styling */
 header {
-    background: #0026ff;
+    background: #0800ff;
     color: white;
     padding: 20px;
     text-align: center;
@@ -231,7 +231,7 @@ nav ul li a:hover {
 }
 
 #city-input:focus {
-    border-color: #5100ff;
+    border-color: #1e00ff;
     outline: none;
 }
 
